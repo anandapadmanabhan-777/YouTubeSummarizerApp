@@ -131,7 +131,6 @@ def main():
     st.title("YouTube Summarizer")
     st.write("Instantly summarize lengthy YouTube videos in bullet points.")
     st.divider()
-    
     summarization()
 
 if __name__ == "__main__":
