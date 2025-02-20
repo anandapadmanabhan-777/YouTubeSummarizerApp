@@ -1,0 +1,5 @@
+streamlit
+transformers
+youtube-transcript-api
+gtts
+requests
