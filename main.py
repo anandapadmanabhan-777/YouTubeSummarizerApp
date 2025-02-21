@@ -13,7 +13,8 @@ load_dotenv()
 
 # Hugging Face API Configuration
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
-HEADERS = {"Authorization": f"Bearer {os.getenv('HF_API_KEY')}"}
+HEADERS = {"Authorization": f"Bearer {st.secrets['HF_API_KEY']}"}
+
 
 # Function to Summarize Text Using Hugging Face API
 def summarize_text(text, max_length=130, min_length=30):
