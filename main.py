@@ -6,10 +6,6 @@ from io import BytesIO
 from gtts import gTTS
 import re
 import time
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
 
 # Hugging Face API Configuration
 hf_api_key = st.secrets["HF_API_KEY"]
