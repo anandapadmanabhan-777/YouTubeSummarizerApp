@@ -1,0 +1,6 @@
+streamlit
+transformers
+youtube-transcript-api
+gtts
+requests
+python-dotenv
