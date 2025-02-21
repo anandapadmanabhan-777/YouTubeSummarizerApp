@@ -1,6 +1,6 @@
 streamlit
 transformers
-youtube-transcript-api
+youtube-transcript-api==0.5.0
 gtts
 requests
 python-dotenv
