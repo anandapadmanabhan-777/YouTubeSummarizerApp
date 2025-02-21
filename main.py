@@ -43,7 +43,9 @@ def extract_video_id(link):
 def extract_transcript(video_id):
     try:
         with st.spinner("Fetching transcript... This may take a moment."):
-            transcript_data = YouTubeTranscriptApi.get_transcript(video_id)
+            time.sleep(1)  # Delay for 1 second before the request
+            transcript_data = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'])
+            # transcript_data = YouTubeTranscriptApi.get_transcript(video_id)
             transcript = " ".join([segment["text"] for segment in transcript_data])
             return transcript
     except Exception as e:
