@@ -47,6 +47,7 @@ def extract_transcript(video_id):
             transcript = " ".join([segment["text"] for segment in transcript_data])
             return transcript
     except Exception as e:
+        st.warning("⚠️ This video does not have subtitles. Try another video.")
         st.error(f"Error fetching transcript: {e}")
         return None
 
