@@ -3,4 +3,3 @@ transformers
 youtube-transcript-api==0.6.3
 gtts
 requests
-python-dotenv
